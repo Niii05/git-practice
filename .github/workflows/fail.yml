@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Break it
-        run: echo "exit 1"
+        run:  exit 1
