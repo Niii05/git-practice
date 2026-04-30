@@ -1,0 +1,19 @@
+name: My CI Pipeline   # workflow ka naam
+
+on:
+  push:
+    branches: ["main"]   # kab run hoga
+
+jobs:
+  build:
+    runs-on: ubuntu-latest   # kis machine pe run kare
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Print message
+        run: echo "Hello Nandini 🚀"
+
+      - name: Fail step
+        run: exit 1
